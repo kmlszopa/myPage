@@ -4,7 +4,7 @@
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Quicksand" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light+Two|Quicksand" rel="stylesheet">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
@@ -13,27 +13,29 @@
 	<nav class="navbar-fixed-top">
 		<div class="container-fluid">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="#">#kmlszopa</a>
+				<a class="navbar-brand" href="#top">#kmlszopa</a>
 			</div>
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#">Strona główna</a></li>
-				<li><a href="#">Umiejętności</a></li>
-				<li><a href="#">Projekty</a></li>
-				<li><a href="#">Atrybuty</a></li>
-				<li><a href="#">Kontakt</a></li>
+				<li class="active"><a href="#top">Strona główna</a></li>
+				<li><a href="#main">Umiejętności</a></li>
+				<li><a href="#go-to-projects">Projekty</a></li>
+				<li><a href="#go-to-about">O mnie</a></li>
+				<li><a href="#contact">Kontakt</a></li>
 			</ul>
 		</div>
 	</nav>
-	<div class="row">
+	
+	<div id="top" class="row">
 		<div class="container-fluid ">
 			<div class="vcenter">
 				<div class="col-md-12 imgback navbar-margin text-center">
 					<h1 id="main" >Kamil Szopa</h1>
 				</div>
-				</div>
 			</div>
 		</div>
-		<div class="row">
+	</div>
+	<div class="wrapper container-fluid">
+		<div class="row margin-bottom">
 			<div id="skills" class="container">
 				<div class="col-md-12 text-center attributes">
 					Umiejętności
@@ -44,61 +46,109 @@
 		<div class="row">
 			<div class="container text-center">
 				<div class="col-md-4">
+					<img id="javalogo" src="images/1.png" alt="java-logo">
 					<h4>JAVA</h4>
 					<div class="progress">
 						<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
-						aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-						40%
+						aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
 					</div>
 				</div>
 			</div>
 			<div class="col-md-4">
+				<img id="springlogo" src="images/3.png" alt="java-logo">
 				<h4>SPRING</h4>
 				<div class="progress">
 					<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
-					aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-					40%
+					aria-valuenow="65" aria-valuemin="0" aria-valuemax="100" style="width:50%">
 				</div>
 			</div>
 		</div>
-		<div class="col-md-4">
-			<h4>HTML+CSS</h4>
+		<div class="col-md-4 add-margin">
+			<img id="htmlcsslogo" src="images/4.jpg" alt="java-logo">
+			<h4>HTML + CSS</h4>
 			<div class="progress">
 				<div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar"
-				aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width:40%">
-				40%
+				aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
 			</div>
 		</div>
 	</div>
 </div>
+</div>
+<div id="go-to-projects" class="row">
+	<div class="container-fluid">
+	<div class="col-md-12 imgback-projects text-center vcenter-others">
+			<h1 class="projects-para" >Projekty</h1>
+		</div>
+	</div>
+</div>
+<div id="projects" class="row">
+	<div class="container text-center">
+		<div class="col-md-3">
+			<i class="fa fa-file-image-o" aria-hidden="true"></i>
+			<a href="https://github.com/kmlszopa/kwejkiLike"><h4>Portal z gifami</h4></a>
+		</div>
+		<div class="col-md-3">
+			<i class="fa fa-twitter" aria-hidden="true"></i>
+			<a href="https://github.com/kmlszopa/TwitterApp"><h4>Przeglądarka tweetów</h4></a>
+		</div>
+		<div class="col-md-3">
+			<i class="fa fa-android" aria-hidden="true"></i>
+			<a href="https://github.com/kmlszopa/Quiz"><h4>Quiz na Androida</h4></a>
+		</div>
+		<div class="col-md-3">
+			<i class="fa fa-android" aria-hidden="true"></i>
+			<a href="https://github.com/kmlszopa/TodoApp"><h4>Lista rzeczy do zrobienia</h4></a>
+		</div>
+	</div>
+</div>
+<div id="go-to-about" class="row">
+	<div class="container-fluid">
+	<div class="col-md-12 imgback-about text-center vcenter-others">
+			<h1 class="projects-para" >O mnie</h1>
+		</div>
+	</div>
+</div>
+<div id="about" class="row">
+	<div class="container text-center">
+		<div class="col-md-offset-2 col-md-5">
+			<img id="meImage" src="images/me.jpg" alt="java-logo">
+			<p>Jestem młodym programistą (póki co freelancerem;)) zajmującym się stronami i serwisami internetowymi. Piszę w Javie i Springu. Po za kodowaniem lubię aktywnie spędzać czas, a także zadbać o ciało i ducha. </p>
+		</div>
+		<div class="col-md-4" >
+			<i class="fa fa-heartbeat" aria-hidden="true"></i>
+			<h4>Wytrwały</h4>
+			<p>Najważniejsze to nie poddawać się.</p>
+			<i class="fa fa-random" aria-hidden="true"></i>
+			<h4>Dociekliwy</h4>
+			<p>Wszystkiego się można dowiedzieć!</p>
+			<i class="fa fa-picture-o" aria-hidden="true"></i>
+			<h4>Kreatywny</h4>
+			<p>Nie lubię stać w miejscu.</p>
+		</div>
+	</div>
 </div>
 <div class="row">
 	<div id="attributes" class="container">
 		<div class="col-md-12 text-center attributes">
-			Atrybuty
+			Kontakt
 			<hr>
 		</div>
 	</div>
 </div>
-<div class="row">
-	<div class="container text-center">
-		<div class="col-md-4">
-			<i class="fa fa-random" aria-hidden="true"></i>
-			<h4>Dociekliwy</h4>
-			Wszystkiego się można dowiedzieć!
-		</div>
-		<div class="col-md-4">
-			<i class="fa fa-heartbeat" aria-hidden="true"></i>
-			<h4>Wytrwały</h4>
-			Najważniejsze to nie poddawać się.
-		</div>
-		<div class="col-md-4">
-			<i class="fa fa-picture-o" aria-hidden="true"></i>
-			<h4>Kreatywny</h4>
-			Chętnie tworze nowe rzeczy, nie stoję w miejscu.
-		</div>
+<div id="contact" class="row">
+	<div class="col-md-12 text-center">
+		<h2><i class="fa fa-envelope" aria-hidden="true"></i> <a href="mailto:kmlszopa@gmail.com">kmlszopa@gmail.com</a></h2>
+		<h2><i class="fa fa-phone" aria-hidden="true"></i> <a href="tel:+48728549509">+48 728 549 509</a></h2>
+		<h2><i class="fa fa-github" aria-hidden="true"></i> <a href="https://github.com/kmlszopa">github.com/kmlszopa</a></h2>
 	</div>
 </div>
-
+</div>
+<nav class="modal-footer">
+	<div class="container-fluid">
+		<div>
+			<p>site design © 2017 kmlszopa</p>
+		</div>
+	</div>
+</nav>
 </body>
 </html>
