@@ -1,5 +1,12 @@
 $main-color: #ff783c;
 
+@media screen and (max-width:768px) {
+  
+  ul li {
+    float: right;
+  }
+}
+
 a{
 	color: #14b0bf;
 }
